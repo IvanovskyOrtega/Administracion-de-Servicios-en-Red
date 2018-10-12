@@ -1,0 +1,7 @@
+Configuración de Keepalived en CentOS: https://www.youtube.com/watch?v=yq254ce8BUg 
+Configurar Keepalived y Quagga en TinyCore: https://brezular.com/2011/01/20/linux-core-as-router-and-l3-switch-appliance/
+Ejemplos de uso de Keepalived:
+https://packetpushers.net/vrrp-linux-using-keepalived-2/
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/load_balancer_administration/ch-initial-setup-vsa#
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/load_balancer_administration/s1-initial-setup-conf-dr-vsa
+Instalar dCore en una máquina virtual: http://www.brianlinkletter.com/how-to-install-dcore-linux-in-a-virtual-machine/
