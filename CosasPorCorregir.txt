@@ -1,0 +1,9 @@
+En las ovas de los Routers:
+  - Ponerle nombre al grupo sincronizado de Keepalived
+  - Cambian el nombre de la interfaz de la 2da instancia
+  - Cambiar la prioridad de los routers de backup
+  - Crear el directorio para los PID de Quagga
+En los Load Balancers:
+  - Modificar la interfaz de la instancia de Keepalived
+  - Modificar las ip en el archivo "bothServers.sh"
+  
