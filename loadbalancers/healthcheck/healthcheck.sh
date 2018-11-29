@@ -1,7 +1,7 @@
 #!/bin/sh
 
 #Load default firewall rules
-/home/tc/bothServers.sh
+/home/tc/healthcheck/bothServers.sh
 s1p=0
 s2p=0
 s1c=0
@@ -30,13 +30,13 @@ do
 	fi
 	if [ $changed -eq 1 ]; then
 		if [ $s1c -eq 0 ] && [ $s2c -eq 0 ]; then
-			/home/tc/bothServers.sh
+			/home/tc/healthcheck/bothServers.sh
 			echo "Server #1 up, Server #2 up"
 		elif [ $s1c -eq 1 ] && [ $s2c -eq 0 ]; then
-			/home/tc/oneServer.sh 10.0.3.102
+			/home/tc/healthcheck/oneServer.sh 10.0.3.102
 			echo "Server #1 down, Server #2 up"
 		elif [ $s1c -eq 0 ] && [ $s2c -eq 1 ]; then
-			/home/tc/oneServer.sh 10.0.3.101
+			/home/tc/healthcheck/oneServer.sh 10.0.3.101
 			echo "Server #1 up, Server #2 down"
 		fi
 	fi
