@@ -1,6 +1,6 @@
 #!/bin/sh
 
-ip route add 10.0.2.0/24 via 10.0.2.1 dev eth3
+ip route add 10.0.2.0/24 via 10.0.2.11 dev eth3
 eth3=eth3
 eth4=eth4
 master_ip=10.0.2.11
@@ -27,8 +27,8 @@ do
 		if [ $ping_route -eq 0 ]; then
 			master_interface=$eth3
 			backup_interface=$eth4
-			master_ip=10.0.2.1
-			backup_ip=10.0.2.2
+			master_ip=10.0.2.11
+			backup_ip=10.0.2.12
 			ip route flush dev $backup_interface
 			ip route add 10.0.2.0/24 via $master_ip dev $master_interface
 		fi
