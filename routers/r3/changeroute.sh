@@ -3,8 +3,8 @@
 ip route add 10.0.2.0/24 via 10.0.2.1 dev eth3
 eth3=eth3
 eth4=eth4
-master_ip=10.0.2.1
-backup_ip=10.0.2.2
+master_ip=10.0.2.11
+backup_ip=10.0.2.12
 master_interface=$eth3
 backup_interface=$eth4
 while :
