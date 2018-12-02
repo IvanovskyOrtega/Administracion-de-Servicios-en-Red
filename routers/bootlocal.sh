@@ -11,4 +11,4 @@ sudo ospfd -u root -d -f /home/tc/conf/ospfd.conf
 
 sudo keepalived -P -l -f /home/tc/conf/keepalived.conf
 snmpd -C -c /home/tc/conf/snmpd.conf
-home/tc/changeroute.sh &
+#home/tc/changeroute.sh &
