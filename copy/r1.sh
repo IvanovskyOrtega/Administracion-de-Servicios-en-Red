@@ -8,5 +8,3 @@ sudo cp /mnt/sdb1/routers/bootlocal.sh /opt/
 sudo chmod 777 *.sh
 sudo chmod 777 /opt/*.sh
 sudo chmod 777 conf/*.conf
-sudo echo "home/tc/changeroute.sh &" >> /opt/bootlocal.sh
-sudo echo "home/tc/isplb.sh &" >> /opt/bootlocal.sh
