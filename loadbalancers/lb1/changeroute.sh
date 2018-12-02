@@ -2,7 +2,7 @@
 
 ip route flush dev eth0
 ip route flush dev eth1
-ip route add 10.0.2.0/24 proto kernel scope link src 10.0.2.11 dev eth0
+ip route add 10.0.2.0/24 proto kernel scope link src 10.0.2.1 dev eth0
 ip route add default 10.0.2.20
 eth0=eth0
 eth1=eth1
